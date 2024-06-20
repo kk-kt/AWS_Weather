@@ -7,7 +7,7 @@ sns = boto3.client('sns')
 def lambda_handler(event, context):
     # 날씨 정보 가져오기
     city = "Sasang"
-    api_key = "27c09578263bf426599e99904828995e"
+    api_key = ""
     weather_info = get_weather(city, api_key)
 
     # SMS 보내기
